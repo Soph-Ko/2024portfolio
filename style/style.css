@@ -1,1 +1,399 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --maincolor: #080C0A;
+  --subcolor: #585858;
+  --linkcolor: #B4B4B4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  width: 20%;
+  min-width: 260px;
+  height: 100vh;
+  border-right: 2px solid #080C0A;
+  border-top: 2px solid #080C0A;
+  border-bottom: 2px solid #080C0A;
+  position: sticky;
+  top: 0px;
+}
+
+.mainlogo {
+  margin-left: 23px;
+  margin-top: 23px;
+  margin-bottom: 65px;
+}
+
+.sublogo {
+  margin-left: 23px;
+  margin-bottom: 12px;
+}
+
+.description {
+  margin-left: 23px;
+  margin-bottom: 30px;
+  color: var(--subcolor);
+}
+
+.menu {
+  display: block;
+  margin-bottom: 18px;
+  line-height: 56px;
+}
+
+.mainmenu {
+  font-weight: 700;
+  color: var(--maincolor);
+  font-size: 18px;
+  margin-left: 23px;
+}
+
+.subcategory {
+  font-weight: 700;
+  line-height: 60px;
+  list-style: none;
+  display: block;
+  margin-left: 23px;
+  margin-bottom: 18px;
+}
+
+.submenu {
+  color: var(--subcolor);
+  line-height: 23px;
+  list-style-type: none;
+  font-weight: 400;
+}
+
+.mainmenu > a {
+  color: var(--maincolor);
+}
+
+hr {
+  border: 1px solid #080C0A;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+content {
+  width: 80%;
+  padding: 23px;
+  overflow-y: hidden;
+  position: relative;
+}
+
+content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-box {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contents {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item {
+  min-height: auto;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+.item > .projectname {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 13px;
+}
+.item > .department {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.item > .date {
+  color: var(--subcolor);
+}
+.item > .Achievement {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.myrole-description {
+  margin-top: 13px;
+}
+
+.contentline {
+  border: 1px solid #080C0A;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+navtop {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  height: 57px;
+  z-index: 1;
+  display: none;
+}
+
+nav {
+  font-size: 18px;
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  height: 57px;
+  border-bottom: 2px solid #080C0A;
+}
+
+nav ul li {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding-left: 60px;
+  height: 57px;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    display: none;
+  }
+  content {
+    width: 100%;
+    margin-top: 57px;
+  }
+  navtop {
+    display: inline;
+  }
+  .mobile-header {
+    width: 100%;
+    height: 57px;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 740px) {
+  header {
+    display: none;
+  }
+  content {
+    width: 100%;
+  }
+  nav {
+    font-size: 14px;
+  }
+  navtop {
+    display: inline;
+  }
+  .mobile-header {
+    width: 100%;
+    height: 57px;
+    line-height: 1;
+  }
+  nav ul li {
+    padding-left: 14px;
+  }
+  content .contents {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  content .flexbox {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  content .item {
+    font-size: 13px;
+    min-height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+  content .item > .projectname {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  content .item > .department {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  content .item > .date {
+    font-size: 14px;
+    color: var(--subcolor);
+    margin-bottom: 10px;
+  }
+  content .item > .Achievement {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .netflixdetail .subtitle {
+    font-size: 15px;
+  }
+  .netflixdetail .inspiration-netflix {
+    display: block;
+    font-size: 11px;
+  }
+  .netflixdetail .mini-subtitle {
+    font-size: 15px;
+  }
+  .netflixdetail .inspiration-link {
+    font-size: 10px;
+  }
+  .image-detail > .subtitle {
+    font-size: 15px;
+  }
+  .image-detail .description-detail {
+    font-size: 13px;
+  }
+}
+.subtitle {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mini-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.inspiration-image {
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+.sub-inspiration-image {
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+}
+.sub-inspiration-image > .image-description {
+  width: 50%;
+  font-size: 14px;
+  color: #585858;
+  margin-top: 0px;
+}
+
+.no-subtitle {
+  height: auto;
+  display: flex;
+  margin-top: 30px;
+}
+.no-subtitle > .image-description {
+  width: 50%;
+  font-size: 14px;
+  color: #585858;
+  margin-top: 0px;
+}
+
+.inspiration-netflix {
+  font-size: 14px;
+  color: #585858;
+}
+
+.image-description {
+  width: 50%;
+  font-size: 14px;
+  color: #585858;
+  margin-top: 20px;
+}
+
+.inspiration-netflix {
+  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+}
+
+.inspiration-link {
+  display: block;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.inspiration-link > a {
+  color: var(--linkcolor);
+}
+
+.content1 {
+  margin-top: 20px;
+}
+
+.description-image {
+  border: 2px solid #080C0A;
+  margin-top: 50px;
+}
+
+.description-detail {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.just-image {
+  margin-top: 35px;
+}
+
+.arrow-box {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 20px;
+  height: auto;
+}
+
+.image-block {
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.image-block > .image-three {
+  width: 32.3%;
+  display: block;
+  height: auto;
+}
+
+.orangeBoldText {
+  color: #F9714B;
+}/*# sourceMappingURL=style.css.map */
