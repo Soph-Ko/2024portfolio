@@ -24,6 +24,15 @@ a {
   text-decoration: none;
 }
 
+.comingsoon_thumb a:hover {
+  cursor: url(/asset/comingsoon.svg) 25 25, auto;
+  transition: 1s;
+}
+.comingsoon_thumb .image-thumbnail:hover {
+  cursor: url(/asset/comingsoon.svg) 25 25, auto;
+  transition: 1s;
+}
+
 body {
   font-family: "Inter", sans-serif;
   width: 100%;
