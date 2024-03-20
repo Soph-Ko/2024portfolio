@@ -563,15 +563,6 @@ nav ul li {
   }
 }
 @media screen and (max-width: 740px) {
-  .img {
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: crisp-edges;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-  }
   header {
     display: none;
   }
