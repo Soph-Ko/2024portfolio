@@ -9,6 +9,11 @@
   padding: 0;
   text-decoration: none;
 }
+* img {
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
 
 a:hover {
   cursor: url(/asset/orange_circle.svg) 25 25, auto;
