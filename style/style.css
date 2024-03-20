@@ -9,11 +9,6 @@
   padding: 0;
   text-decoration: none;
 }
-* img {
-  image-rendering: -webkit-optimize-contrast;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
 
 a:hover {
   cursor: url(/asset/orange_circle.svg) 25 25, auto;
@@ -568,6 +563,14 @@ nav ul li {
   }
 }
 @media screen and (max-width: 740px) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: auto;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
   header {
     display: none;
   }
