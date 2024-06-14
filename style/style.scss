@@ -10,9 +10,34 @@
     text-decoration: none;
 }
 
+.image-box-interaction:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-out;
+    cursor: url(/asset/orange_circle_view.svg) 25 25, auto;
+}
+.image-box-interaction:not(:hover){
+    transition: 0.3s ease-out;
+}
+.mainlogo:hover{
+    transform: translateY(-4px);
+    transition: 0.3s ease-out;
+}
+.mainlogo:not(:hover){
+    transition: 0.3s ease-out;
+}
+.image-thumbnail-main:hover{
+    transition: 0.3s ease-out;
+    cursor: url(/asset/orange_circle_view.svg) 25 25, auto;
+}
+.image-thumbnail-main:not(:hover){
+    transition: 0.1s ease-out;
+}
+
 a:hover{
     cursor: url(/asset/orange_circle.svg) 25 25, auto;
+    transition: 1s;
 }
+
 .submenu a:hover{
     opacity: 0.9;
     filter: blur(1.5px);
@@ -22,6 +47,7 @@ a:hover{
 a{
     text-decoration: none;
 }
+
 
 .comingsoon_thumb{
     a:hover{
@@ -33,6 +59,20 @@ a{
         transition: 1s;
     }
 }
+content{
+    animation: screenChange 1s;
+}
+@keyframes screenChange{
+    from{
+        transform: translateY(1%);
+        opacity: 0%;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
 
 body{
     font-family: 'Inter', sans-serif;
