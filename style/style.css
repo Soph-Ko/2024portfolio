@@ -46,7 +46,6 @@ a:hover {
 .submenu a:hover {
   opacity: 0.9;
   filter: blur(1.5px);
-  transition: 1s;
 }
 
 a {
@@ -99,7 +98,7 @@ header {
 .mainlogo {
   margin-left: 23px;
   margin-top: 23px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 .sublogo {
@@ -116,19 +115,19 @@ header {
 .menu {
   display: block;
   margin-bottom: 18px;
-  line-height: 56px;
+  line-height: 45px;
 }
 
 .mainmenu {
   font-weight: 700;
   color: var(--maincolor);
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 23px;
 }
 
 .subcategory {
   font-weight: 700;
-  line-height: 60px;
+  line-height: 50px;
   list-style: none;
   display: block;
   margin-left: 23px;
