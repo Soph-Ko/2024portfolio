@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia Ko - Product Designer</title>
+    <link rel="icon" href="/asset/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<section class="new_body">
+    <section class="new_content1">
+        <div class="new_header">
+            <div class="header_left">
+                <a href="/contents/newhome.html" class="logo_link"><img class="new_header_logo" src="/asset/sophia_logo_32.svg" alt="sophia_logo_32"></a>
+            </div>
+            <div class="header_right">
+                <div style="float: right;"><a class="logo_link"><img class="close_icon" src="/asset/icon_close_32.svg" alt="icon_close_32" onclick="goBack()"></a></div>
+                <div class="medium_big_black">
+                    <ul class="category_list">
+                        <a href="/contents/newhome.html" style="text-decoration: none; color:#080C0A;"><li class="list_indi">Home</li></a>
+                        <a href="/contents/newhome.html#content-box" style="text-decoration: none; color:#080C0A;"><li class="list_indi">Work</li></a>
+                        <a href="/contents/newhome.html#about-box" style="text-decoration: none; color:#080C0A;"><li class="list_indi">About</li></a>
+                        <a href="/contents/newPlay.html" style="text-decoration: none; color:#080C0A;"><li class="list_indi">Play</li></a>
+                        <a href="mailto:sophiakodesign@gmail.com" style="text-decoration: none; color:#080C0A;" target="_blank"><li class="list_indi">Contact</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="new_catrgory_footer">
+            <div class="header_left">
+                <div class="small_black_simple">Seoul, KR</div>
+            </div>
+            <div class="header_right">
+                <div class="detail_small_grey_hover" style="padding: 0 0 0 20px;">LinkedIn</div>
+            </div>
+        </div>
+    </section>
+    <div id="mouse-cursor">
+        <div></div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back(); // 이전 페이지로 돌아가기
+            setTimeout(function() {
+                window.scrollTo(0, 0); // 페이지 상단으로 스크롤 이동
+            }, 0); // 페이지가 돌아간 후 바로 실행되도록 약간의 지연을 줍니다.
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="/js/cursor.js" defer></script>
+</section>
