@@ -1217,7 +1217,22 @@ body{
         margin-right: 0;
         transform: translateX(0); 
     }
-    
+    .final-img-txt-box{
+        display: block;
+        >.title_medium_group{
+            width: 95%;
+            >.final-img-txt-left{
+                font-size: 1.2rem;
+            }
+        }
+        >.right_group{
+            width: 95%;
+            margin-top: 10px;
+            >.final-img-txt-right{
+                font-size: 1rem;
+            }
+        }
+    }
     .summary_box_main{
         padding: 48px 48px 16px;
         >.new_main_title{
@@ -1349,6 +1364,9 @@ body{
     }
     .blank_box150{
         display: block;
+    }
+    .blank_box180{
+        display: none;
     }
     .footer{
         >.footer_box{

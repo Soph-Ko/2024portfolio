@@ -1258,6 +1258,22 @@ body {
     margin-right: 0;
     transform: translateX(0);
   }
+  .final-img-txt-box {
+    display: block;
+  }
+  .final-img-txt-box > .title_medium_group {
+    width: 95%;
+  }
+  .final-img-txt-box > .title_medium_group > .final-img-txt-left {
+    font-size: 1.2rem;
+  }
+  .final-img-txt-box > .right_group {
+    width: 95%;
+    margin-top: 10px;
+  }
+  .final-img-txt-box > .right_group > .final-img-txt-right {
+    font-size: 1rem;
+  }
   .summary_box_main {
     padding: 48px 48px 16px;
   }
@@ -1381,6 +1397,9 @@ body {
   }
   .blank_box150 {
     display: block;
+  }
+  .blank_box180 {
+    display: none;
   }
   .footer > .footer_box > .right_group > .medium_big_black {
     font-size: 2.4rem;
