@@ -1,4 +1,11 @@
 function setupPreLoader() {
+    // 세션 스토리지에서 'preloaderShown' 값 확인
+    if (sessionStorage.getItem('preloaderShown') === 'true') {
+        // 'preloaderShown'이 true일 경우, 프리로더를 표시하지 않음
+        removePreLoader();
+        return;
+    }
+
     let counterElement = document.querySelector(".count p");
     let currentValue = 0;
 
@@ -87,11 +94,16 @@ function setupPreLoader() {
 }
 
 function removePreLoader() {
-    // 프리로더 요소를 DOM에서 제거
-    const preloader = document.querySelector(".pre-loader");
+    // 프리로더 요소와 관련된 콘텐츠 숨기기
+    const preloader = document.querySelector(".pre-loader-container");
+    const loaderContent = document.querySelector(".loader-content");
+    
     if (preloader) {
-        preloader.style.display = "none"; // display 속성을 none으로 설정하여 숨기기
-        // 또는 preloader.remove(); // 요소를 완전히 제거
+        preloader.style.display = "none"; // 프리로더 숨기기
+    }
+
+    if (loaderContent) {
+        loaderContent.style.display = "none"; // 로더 콘텐츠 숨기기
     }
 
     // 헤더 보이게 하기
@@ -100,6 +112,9 @@ function removePreLoader() {
         header.style.opacity = 1; // 헤더 보이게 하기
         header.style.visibility = "visible"; // 헤더를 다시 보이게 설정
     }
+
+    // 세션 스토리지에 'preloaderShown' 값 저장 (한 번만 보이도록 설정)
+    sessionStorage.setItem('preloaderShown', 'true');
 }
 
 // 모듈 초기화
