@@ -1551,15 +1551,17 @@ body{
     }
     .footer{
         padding: 24px 24px 16px;
-        background-color: var(--bggrey);
         >.footer_box{
+            display: block;
             >.right_group{
+                width: 90%;
                 >.medium_big_black{
                     font-size: 1.6rem;
+                    padding: 40px 0 20px;
 
                 }
                 >.header_left{
-                    padding: 16px 16px;
+                    padding: 16px 0;
                 }
                 >.menu_list{
                     font-size: 0.8rem;
@@ -1568,11 +1570,12 @@ body{
                     font-size: 0.8rem;
                 }
                 >.list_small_grey_right{
-                    font-size: 0.8rem;
+                    display: none;
                 }
             }
         }
     }
+    
     .badge_resume{
         font-size: 0.8rem;
         padding: 18px 24px;

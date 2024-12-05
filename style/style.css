@@ -1561,13 +1561,19 @@ body {
   }
   .footer {
     padding: 24px 24px 16px;
-    background-color: var(--bggrey);
+  }
+  .footer > .footer_box {
+    display: block;
+  }
+  .footer > .footer_box > .right_group {
+    width: 90%;
   }
   .footer > .footer_box > .right_group > .medium_big_black {
     font-size: 1.6rem;
+    padding: 40px 0 20px;
   }
   .footer > .footer_box > .right_group > .header_left {
-    padding: 16px 16px;
+    padding: 16px 0;
   }
   .footer > .footer_box > .right_group > .menu_list {
     font-size: 0.8rem;
@@ -1576,7 +1582,7 @@ body {
     font-size: 0.8rem;
   }
   .footer > .footer_box > .right_group > .list_small_grey_right {
-    font-size: 0.8rem;
+    display: none;
   }
   .badge_resume {
     font-size: 0.8rem;
