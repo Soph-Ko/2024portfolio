@@ -814,6 +814,12 @@ a:hover {
   padding: 15px 0 0;
 }
 
+.blank_box50 {
+  display: none;
+  width: 100%;
+  padding: 50px 0 0;
+}
+
 .blank_box60 {
   width: 100%;
   padding: 60px 0 0;
@@ -1579,6 +1585,13 @@ body {
   .main_content_txt_black {
     font-size: 0.9rem;
   }
+  .half-rec-box {
+    display: block;
+  }
+  .half-rectangle-box {
+    padding-top: 6%;
+    width: 100%;
+  }
   .about_box {
     display: block;
     padding-top: 100px;
@@ -1619,6 +1632,9 @@ body {
     display: none;
   }
   .blank_box15 {
+    display: block;
+  }
+  .blank_box50 {
     display: block;
   }
   .greyline {
