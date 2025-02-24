@@ -309,6 +309,14 @@ a:hover {
   transition: opacity 0.5s ease;
 }
 
+.final-img-nospace {
+  width: 100%;
+  position: relative; /* 위치 기준 설정 */
+  display: block;
+  padding: 20px 30px 0px 30px;
+  transition: opacity 0.5s ease;
+}
+
 .final-img-center {
   width: 20%;
   position: relative; /* 위치 기준 설정 */
@@ -345,11 +353,38 @@ a:hover {
   overflow: hidden;
 }
 
+.half-rec-bg-black {
+  width: 100%;
+  background-color: var(--maincolor);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 .half-rec-img-bottom {
   width: 80%;
   position: relative; /* 위치 기준 설정 */
   display: block;
   padding: 40px 80px 0;
+  transition: transform 0.5s ease;
+  transform: scale(1.2);
+}
+
+.half-rec-img-right {
+  width: 100%;
+  position: relative; /* 위치 기준 설정 */
+  display: block;
+  padding: 60px 0 0 120px;
+  transition: transform 0.5s ease;
+  transform: scale(1.2);
+}
+
+.half-rec-img-left {
+  width: 100%;
+  position: relative; /* 위치 기준 설정 */
+  display: block;
+  padding: 0 0 60px 120px;
   transition: transform 0.5s ease;
   transform: scale(1.2);
 }
@@ -368,6 +403,14 @@ a:hover {
   position: relative; /* 위치 기준 설정 */
   display: block;
   padding: 60px 120px;
+  transition: opacity 0.5s ease;
+}
+
+.half-rec-img-narrow {
+  width: 50%;
+  position: relative; /* 위치 기준 설정 */
+  display: block;
+  padding: 50px 0px;
   transition: opacity 0.5s ease;
 }
 
@@ -478,7 +521,7 @@ a:hover {
 
 .focus-title-grey {
   font-size: 1rem;
-  font-size: 1rem;
+  font-weight: 300;
   padding: 8px 0 10px;
   line-height: 1.3;
   color: var(--linkcolor);
